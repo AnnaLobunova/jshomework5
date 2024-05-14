@@ -7,6 +7,8 @@ const priceData = {
   
   let updatedPriceData = {};
   for (let key in priceData){
-    updatedPriceData[key]=priceData[key].toLowerCase;
-    console.log[updatedPriceData[key]];
+    let price = parseFloat(priceData[key]).toFixed(2);
+    updatedPriceData[key.toLowerCase()]= price;
     };
+    console.log(updatedPriceData);
+
